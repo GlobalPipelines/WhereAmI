@@ -4,7 +4,7 @@ var longitude;
 function setup(){
 	createCanvas(windowWidth,windowHeight); //make a fullscreen canvas, thanks to: http://codepen.io/grayfuse/pen/wKqLGL
 	textSize(32);
-    watchPosition(positionChanged);
+    intervalCurrentPosition(positionPing, 1000);
 }
 
 function draw() {
@@ -13,9 +13,9 @@ function draw() {
 	text('Longitude: '+longitude, 10, 250);
 }
 
-function positionChanged(position){
-    print("lat: " + position.latitude);
+function positionPing(position){
+    //print("lat: " + position.latitude);
     latitude = position.latitude;
-    print("long: " + position.longitude);
+    //print("long: " + position.longitude);
     longitude = position.longitude;
 }
