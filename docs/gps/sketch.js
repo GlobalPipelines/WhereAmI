@@ -5,11 +5,12 @@ function setup(){
 	createCanvas(windowWidth,windowHeight); //make a fullscreen canvas, thanks to: http://codepen.io/grayfuse/pen/wKqLGL
 	textSize(32);
     watchPosition(positionChanged);
+    background(255); //white background
 }
 
 function draw() {
-	text('Latitude: '+latitude, 10, 10);
-	text('Longitude: '+longitude, 10, 50);
+	text('Latitude: '+latitude, 10, 100);
+	text('Longitude: '+longitude, 10, 150);
 }
 
 function positionChanged(position){
