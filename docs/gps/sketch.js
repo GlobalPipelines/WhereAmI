@@ -9,8 +9,8 @@ function setup(){
 
 function draw() {
 	background(255); //white background
-	text('Latitude: '+latitude, 10, 100);
-	text('Longitude: '+longitude, 10, 150);
+	text('Latitude: '+latitude, 10, 200);
+	text('Longitude: '+longitude, 10, 250);
 }
 
 function positionChanged(position){
